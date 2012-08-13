@@ -1,0 +1,7 @@
+tar czf my-bkup.tar.gz <dir>
+s3cmd mb s3://<bkup bucket>
+s3cmd sync my-bkup.tar.gz s3://<bkup bucket>
+
+
+----- In crontab -------
+@daily <sync script>.sh

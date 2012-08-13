@@ -1,0 +1,1 @@
+@daily s3cmd sync --recursive <path to dir>/ s3://<bucket name>
